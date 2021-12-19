@@ -8,7 +8,6 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 
 var $body = $("body");
 $(document).ready(function () {
-  $('body').fadeIn(600);
   $("a[href*='http://']:not([href*='" + location.hostname + "']),[href*='https://']:not([href*='" + location.hostname + "'])").attr('target', '_blank').addClass('blank');
   $('a[href^="#"]').on('click', function () {
     var href = $(this).attr('href');
