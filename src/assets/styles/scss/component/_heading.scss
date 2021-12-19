@@ -1,0 +1,61 @@
+.c-intro {
+  // text-align: left;
+  position: relative;
+  margin: 0 0 60px;
+
+  @include mq-target(sm) {
+    margin: 0 0 80px;
+  }
+
+  &__heading {
+
+    & > span {
+      display: block;
+    }
+
+    & .-ja {
+      // display: flex;
+      // justify-content: left;
+      // align-items: center;
+      font-size: 3rem;
+    }
+
+    & .-en {
+      position: relative;
+      font-size: 1.6rem;
+      margin-top: 10px;
+    }
+  }
+
+  &__txt {
+
+    color: $color-main;
+    font-size: 1.4rem;
+    line-height: 1.7;
+    font-feature-settings: "palt";
+    margin: 10px 0 0;
+
+    @include mq-target(sm) {
+      font-size: 1.8rem;
+      line-height: 2;
+    }
+
+    &--back {
+      color: $color-key;
+      font-size: 10rem;
+      line-height: .8;
+      opacity: 0.2;
+      bottom: 100%;
+      right: 0;
+      z-index: 2;
+      text-align: right;
+      white-space: nowrap;
+      position: absolute;
+
+      &.-left {
+        right: initial;
+        left: 0;
+      }
+    }
+  }
+}

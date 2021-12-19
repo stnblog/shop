@@ -1,0 +1,102 @@
+<% let title = (pageId === 'home') ? jsonData.siteInfo.name : jsonData.pages[pageId].name + jsonData.siteInfo.name%>
+<% let description = jsonData.pages[pageId].description %>
+<% let filePath = jsonData.pages[pageId].filePath %>
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+  <meta name="description" content="<%= description %>">
+
+  <link rel="icon" href="<%= filePath %>assets/images/icon/favicon-32x32.png" sizes="32x32">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link href="http://fonts.cdnfonts.com/css/sofia-pro" rel="stylesheet">
+  <link href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="<%= filePath %>assets/styles/vendors/swiper-bundle.min.css" rel="stylesheet">
+  <link href="<%= filePath %>assets/styles/main.min.css" rel="stylesheet">
+
+</head>
+
+
+
+<body data-student="1" class="">
+  <!-- <body data-student="1"> -->
+
+
+  <header id="js-header" class="l-header">
+    <div class="l-header__wrap">
+      <div class="l-header__row">
+        <p class="l-header__logo">
+          <a href="/">tnblog</a>
+        </p>
+        <nav class="l-header__nav u-dp-pc">
+          <ul class="l-header__list l-header__list--nav">
+            <li class="l-header__item--nav">
+              <a href="/shop">
+                <span class="-en">HOME</span>
+                <span class="-ja">ホーム</span>
+              </a>
+            </li>
+            <li class="l-header__item--nav">
+              <a href="/shop/product">
+                <span class="-en">PRODUCT</span>
+                <span class="-ja">製品一覧</span>
+              </a>
+            </li>
+            <li class="l-header__item--nav">
+              <a href="/shop/news">
+                <span class="-en">NEWS</span>
+                <span class="-ja">新着情報</span>
+              </a>
+            </li>
+            <li class="l-header__item--nav">
+              <a href="/shop/faq">
+                <span class="-en">FAQ</span>
+                <span class="-ja">よくある質問</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <button class="l-drawer__trigger js-draw__trigger">
+    <span class="-line"></span>
+  </button>
+
+  <nav class="l-drawer__content js-draw__content">
+    <div class="l-drawer__wrap">
+      <ul class="l-drawer__list l-drawer__list--menu">
+        <li class="l-drawer__item">
+          <a href="/shop">
+            <span class="-en">HOME</span>
+            <span class="-ja">ホーム</span>
+          </a>
+        </li>
+        <li class="l-drawer__item">
+          <a href="/shop/product">
+            <span class="-en">PRODUCT</span>
+            <span class="-ja">製品一覧</span>
+          </a>
+        </li>
+        <li class="l-drawer__item">
+          <a href="/shop/news">
+            <span class="-en">NEWS</span>
+            <span class="-ja">新着情報</span>
+          </a>
+        </li>
+        <li class="l-drawer__item">
+          <a href="/shop/faq">
+            <span class="-en">FAQ</span>
+            <span class="-ja">よくある質問</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>

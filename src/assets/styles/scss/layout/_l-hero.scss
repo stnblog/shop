@@ -1,0 +1,109 @@
+.l-hero {
+
+  &__inner {
+    padding: 0 15px;
+    overflow: hidden;
+  }
+
+  &__slider {
+    // overflow: hidden;
+  }
+
+  &__slideWrap {
+    box-sizing: content-box;
+
+    @include mq-target(sm) {
+      box-sizing: border-box;
+    }
+  }
+
+  &__slide {
+    overflow: hidden;
+    border-radius: 20px;
+    margin-right: 15px;
+    width: 98%;
+
+    @include mq-target(md) {
+      margin-right: 30px;
+      width: calc((100% - 30px) / 2.5);
+    }
+
+    @include mq-target(md) {
+    }
+
+    &.swiper-slide-active {
+
+      &.l-hero__slide::after {
+        opacity: 0;
+        transition: opacity .3s ease .3s;
+      }
+
+      .l-hero__cap--sliderInner {
+        opacity: 1;
+        transition: opacity .3s ease .3s;
+
+        h3,
+        p,
+        span {
+          position: relative;
+          z-index: 4;
+        }
+
+
+        &::after {
+          opacity: 1;
+          transition: opacity .3s ease .3s;
+        }
+      }
+    }
+
+    &::after {
+      background: #000;
+      opacity: 0.3;
+    }
+  }
+
+
+  &__img {
+    &--slider {
+      &::before {
+        padding-top: 70%;
+      }
+
+      @include mq-target(lg) {
+        &::before {
+          padding-top: 80%;
+        }
+      }
+
+
+    }
+  }
+
+  &__cap {
+    &--slider {
+      width: 100%;
+      color: $color-white;
+      @include absolute($bottom:0, $right:0);
+      top: auto;
+      margin: auto;
+
+      &Inner {
+        position: relative;
+        padding: 30px 20px 40px;
+
+        &::after {
+          @include absolute($bottom:0, $left:0);
+          background: linear-gradient(to top, #000000, transparent);
+          opacity: 0.7;
+          width: 100%;
+          height: 100%;
+          transition-duration: 1s;
+          position: absolute;
+          z-index: 2;
+        }
+      }
+    }
+  }
+
+}

@@ -1,0 +1,29 @@
+.js-acc {
+  &--trigger {
+
+  }
+
+  &--content {
+    // display: none;
+    &.is-active {
+
+      .js-acc--trigger {
+
+        .js-acc--btn::after {
+          transform: translate(-50%, -50%) rotate(
+            90deg);
+        }
+      }
+
+      .js-acc--answer {
+        max-height: 150px;
+      }
+    }
+  }
+
+  &--answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .3s ease-in-out;
+  }
+}

@@ -1,0 +1,29 @@
+.c-meta {
+  margin: 10px 0 6px;
+  text-align: left;
+  @include flex($align:center);
+  font-size: 1.3rem;
+  font-weight: 500;
+  font-size: 1.1rem;
+
+  & .-tag {
+    text-transform: uppercase;
+    @include flex($align:center);
+    position: relative;
+    padding-right: 16px;
+    letter-spacing: 0.1em;
+
+    &::before {
+      content: "";
+      @include absolute($top:50%, $right:0);
+      transform: translateY(-50%);
+      width: 1px;
+      height: 14px;
+      background: $color-main;
+    }
+  }
+
+  & .-date {
+    padding-left: 16px;
+  }
+}

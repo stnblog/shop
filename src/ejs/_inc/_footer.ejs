@@ -1,0 +1,72 @@
+<% let filePath = jsonData.pages[pageId].filePath %>
+
+<footer class="l-footer" id="footer">
+
+  <div class="l-footer__inner">
+
+    <div class="l-footer__head">
+      <ul class="l-footer__list--sns">
+        <li class="l-footer__item--sns">
+          <a href="">
+            <svg>
+              <use xlink:href="<%= filePath %>assets/images/sprite.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="l-footer__item--sns">
+          <a href="">
+            <svg>
+              <use xlink:href="<%= filePath %>assets/images/sprite.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="l-footer__item--sns">
+          <a href="">
+            <svg>
+              <use xlink:href="<%= filePath %>assets/images/sprite.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="l-footer__body">
+      <p><a href="/shop">ホーム</a></p>
+      <p><a href="/shop/product">製品一覧</a></p>
+      <p><a href="/shop/news">新着情報</a></p>
+      <p><a href="/shop/faq">よくある質問</a></p>
+    </div>
+
+  </div>
+
+
+</footer>
+
+</div>
+
+<script>
+  var userAgent = window.navigator.userAgent.toLowerCase();
+
+  if (userAgent.indexOf('msie') != -1 || userAgent.indexOf('trident') != -1) {
+    window.location.href('https://www.google.com/?hl=ja')
+  }
+</script>
+
+<!-- vendors -->
+<script src="<%= filePath %>assets/scripts/vendors/jquery.min.js"></script>
+<script src="<%= filePath %>assets/scripts/vendors/jquery.matchHeight-min.js"></script>
+<script src="<%= filePath %>assets/scripts/vendors/isotope.pkgd.min.js"></script>
+<script src="<%= filePath %>assets/scripts/vendors/swiper-bundle.min.js"></script>
+
+
+<% if (pageId === 'home'){ %>
+<% } else if (pageId === 'home') { %>
+<% } else if (pageId === '') { %>
+<% } else { %>
+<% } %>
+
+<script src="<%= filePath %>assets/scripts/swiper.js"></script>
+<script src="<%= filePath %>assets/scripts/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,244 @@
+.p-product {
+
+  &__inner {
+    @include mq-target(sm) {
+      padding: 100px 0 0;
+    }
+  }
+
+  &__wrap {
+    @include maxWidth(1000px);
+    padding: 0 15px;
+  }
+
+  &__row {
+    @include flex($wrap:wrap);
+  }
+
+  &__body {
+    margin: 20px 0 0;
+    position: relative;
+  }
+
+  &__box {
+    margin: 40px 0 0;
+  }
+
+  &__item {
+    &--left {
+      width: 100%;
+      @include mq-target(sm) {
+        width: 50%;
+        padding-right: 4%;
+      }
+    }
+
+    &--right {
+      width: 100%;
+      text-align: left;
+      margin: 60px 0 0;
+
+      @include mq-target(sm) {
+        margin: 0;
+        width: 50%;
+
+      }
+    }
+
+    &--bottom {
+      width: 100%;
+      margin: 40px 0 0;
+    }
+
+    &--tab {
+      font-size: 1.6rem;
+      cursor: pointer;
+      margin: 0 12px;
+      padding: 10px 24px;
+      border-bottom: 2px solid $color-bg;
+      transition: all .3s ease;
+      opacity: 1;
+
+      &.is-active {
+        opacity: 0.5;
+        border-color: $color-grey-light-2;
+      }
+
+      @include mq(sm) {
+        font-size: 1.4rem;
+        padding: 0 0 4px;
+      }
+    }
+
+    &--label {
+      font-size: 1.3rem;
+      &:not(:first-child) {
+        margin-left: 10px;
+        background: $color-yellow;
+      }
+    }
+  }
+
+  &__selecter {
+    width: 50%;
+    padding: 0 5px;
+    flex-grow: 0;
+    font-size: 1.5rem;
+
+    label {
+      margin: 20px 0 0;
+      display: block;
+    }
+
+    .-select {
+      color: $color-bg;
+      text-transform: uppercase;
+      padding-left: 16px;
+      border: $line;
+      width: 100%;
+      border-radius: 4px;
+      min-height: 44px;
+    }
+
+    .-number {
+      border: $line;
+      color: $color-bg;
+      border-radius: 4px;
+      padding: 10px 18px;
+      min-height: 44px;
+      max-width: 110px;
+      width: 100%;
+    }
+
+  }
+
+  &__btn {
+    margin: 40px 0 0;
+    button {
+      max-width: 100%;
+      font-size: 1.4rem;
+    }
+  }
+
+  &__img {
+    &--slide {
+      width: 300px;
+      margin: auto;
+
+      &::before {
+        padding-top: 140%;
+      }
+    }
+
+    &--thumb {
+      &::before {
+        padding-top: 100%;
+      }
+    }
+  }
+
+  &__heading {
+
+    &--name {
+      margin: 14px 0 4px;
+      font-size: 2rem;
+      font-weight: 600;
+
+      @include mq-target(sm) {
+
+      }
+    }
+  }
+
+  &__txt {
+    &--price {
+      font-size: 2rem;
+      & span {
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
+
+
+//  slider
+//--------------------------------------------------------------------
+.p-product {
+
+  &__slide {
+    background: $color-grey-light-3;
+  }
+
+  &__thumb {
+    cursor: pointer;
+    margin: 2px 0 0;
+    width: 24%;
+    height: 100%;
+    opacity: .5;
+    overflow: hidden;
+
+    &.swiper-slide-thumb-active {
+      opacity: 1;
+    }
+  }
+}
+
+
+//  comment
+//--------------------------------------------------------------------
+
+.p-product {
+
+  &__list {
+    &--review {
+      margin: 40px 0 0;
+      padding: 24px;
+      border: 1px solid $color-grey-light-3;
+    }
+
+    &--points {
+      @include flex($align:center);
+    }
+  }
+
+  &__item {
+    &--review {
+      text-align: left;
+
+      &:not(:last-child) {
+        margin: 0 0 24px;
+        padding: 0 0 24px;
+        border-bottom: 1px solid $color-grey-light-3;
+      }
+    }
+
+    &--points {
+      svg {
+        fill: $color-yellow;
+        width: 22px;
+        height: 22px;
+      }
+    }
+  }
+
+  &__meta {
+    &--review {
+      margin: 4px 0 14px;
+      font-size: 1.4rem;
+    }
+  }
+
+  &__heading {
+    &--review {
+      margin: 20px 0 0;
+      font-size: 1.8rem;
+      font-weight: 500;
+    }
+  }
+
+  &__txt {
+    &--review {
+      color: $color-sub;
+    }
+  }
+}

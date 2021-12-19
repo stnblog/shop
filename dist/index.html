@@ -1,0 +1,535 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ポートフォリオ</title>
+  <meta name="description" content="説明文">
+
+  <link rel="icon" href="./assets/images/icon/favicon-32x32.png" sizes="32x32">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link href="http://fonts.cdnfonts.com/css/sofia-pro" rel="stylesheet">
+  <link href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="./assets/styles/vendors/swiper-bundle.min.css" rel="stylesheet">
+  <link href="./assets/styles/main.min.css" rel="stylesheet">
+
+</head>
+
+
+
+<body data-student="1" class="">
+  <!-- <body data-student="1"> -->
+
+
+  <header id="js-header" class="l-header">
+    <div class="l-header__wrap">
+      <div class="l-header__row">
+        <p class="l-header__logo">
+          <a href="/">tnblog</a>
+        </p>
+        <nav class="l-header__nav u-dp-pc">
+          <ul class="l-header__list l-header__list--nav">
+            <li class="l-header__item--nav">
+              <a href="/shop">
+                <span class="-en">HOME</span>
+                <span class="-ja">ホーム</span>
+              </a>
+            </li>
+            <li class="l-header__item--nav">
+              <a href="/shop/product">
+                <span class="-en">PRODUCT</span>
+                <span class="-ja">製品一覧</span>
+              </a>
+            </li>
+            <li class="l-header__item--nav">
+              <a href="/shop/news">
+                <span class="-en">NEWS</span>
+                <span class="-ja">新着情報</span>
+              </a>
+            </li>
+            <li class="l-header__item--nav">
+              <a href="/shop/faq">
+                <span class="-en">FAQ</span>
+                <span class="-ja">よくある質問</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <button class="l-drawer__trigger js-draw__trigger">
+    <span class="-line"></span>
+  </button>
+
+  <nav class="l-drawer__content js-draw__content">
+    <div class="l-drawer__wrap">
+      <ul class="l-drawer__list l-drawer__list--menu">
+        <li class="l-drawer__item">
+          <a href="/shop">
+            <span class="-en">HOME</span>
+            <span class="-ja">ホーム</span>
+          </a>
+        </li>
+        <li class="l-drawer__item">
+          <a href="/shop/product">
+            <span class="-en">PRODUCT</span>
+            <span class="-ja">製品一覧</span>
+          </a>
+        </li>
+        <li class="l-drawer__item">
+          <a href="/shop/news">
+            <span class="-en">NEWS</span>
+            <span class="-ja">新着情報</span>
+          </a>
+        </li>
+        <li class="l-drawer__item">
+          <a href="/shop/faq">
+            <span class="-en">FAQ</span>
+            <span class="-ja">よくある質問</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+<!-- <h1>Hello, EJS</h1> -->
+
+<div class="l-hero">
+
+  <div class="l-hero__inner">
+    <div class="swiper-container l-hero__slider">
+      <div class="l-hero__slideWrap swiper-wrapper">
+        <div class="swiper-slide l-hero__slide c-mask">
+          <figure class="c-picture__img l-hero__img--slider">
+            <picture class="c-picture__img--inner">
+              <img src="./assets/images/sec/hero/hero_02.jpg" alt="">
+            </picture>
+            <figcaption class="l-hero__cap--slider">
+              <div class="l-hero__cap--sliderInner c-mask">
+                <div class="flex justify-between">
+                  <p class="-tag">
+                    <a href="#">#セール情報</a>
+                  </p>
+                  <span class="-date">2021/01/01</span>
+                </div>
+                <h3 class="c-thumblist__heading">
+                  tnblog 13シリーズ対応四色カラーのスマホインナーシートが登場！
+                </h3>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="swiper-slide l-hero__slide c-mask">
+          <figure class="c-picture__img l-hero__img--slider">
+            <picture class="c-picture__img--inner">
+              <img src="./assets/images/sec/hero/hero_01.jpg" alt="">
+            </picture>
+            <figcaption class="l-hero__cap--slider">
+              <div class="l-hero__cap--sliderInner c-mask">
+                <div class="flex justify-between">
+                  <p class="-tag">
+                    <a href="#">#セール情報</a>
+                  </p>
+                  <span class="-date">2021/01/01</span>
+                </div>
+                <h3 class="c-thumblist__heading">
+                  tnblog 13シリーズ対応四色カラーのスマホインナーシートが登場！
+                </h3>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="swiper-slide l-hero__slide c-mask">
+          <figure class="c-picture__img l-hero__img--slider">
+            <picture class="c-picture__img--inner">
+              <img src="./assets/images/sec/hero/hero_03.jpg" alt="">
+            </picture>
+            <figcaption class="l-hero__cap--slider">
+              <div class="l-hero__cap--sliderInner c-mask">
+                <div class="flex justify-between">
+                  <p class="-tag">
+                    <a href="#">#セール情報</a>
+                  </p>
+                  <span class="-date">2021/01/01</span>
+                </div>
+                <h3 class="c-thumblist__heading">
+                  tnblog 13シリーズ対応四色カラーのスマホインナーシートが登場！
+                </h3>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+<div class="js-first-view">
+  <main class="l-main">
+
+
+
+
+    <section class="l-section p-concept">
+      <div class="index__inner p-concept__inner">
+        <h2 class="index__heading">
+          <span class="-en animate-heading">ABOUT US</span>
+          <span class="-ja">当社の方針</span>
+        </h2>
+
+        <div class="p-concept__wrap">
+
+          <div class="p-concept__head u-dp-pc inview js-scroll--slideLeft">
+            <figure class="c-picture__img p-concept__img c-mask">
+              <picture class="c-picture__img--inner">
+                <img src="./assets/images/concept_01.jpg" alt="">
+              </picture>
+            </figure>
+          </div>
+
+          <div class="p-concept__body inview js-scroll--fadeUp">
+
+            <h3 class="p-concept__heading">
+              いいデザイン＝売れるデザインを追求
+            </h3>
+            <p class="p-concept__txt--sub">Pursue design</p>
+
+            <div class="p-concept__head u-dp-sp">
+              <figure class="c-picture__img p-concept__img c-mask">
+                <picture class="c-picture__img--inner">
+                  <img src="./assets/images/concept_01.jpg" alt="">
+                </picture>
+              </figure>
+            </div>
+
+
+            <p class="p-concept__txt">
+              スマートフォンケース、スマートフォンカバー、保護フィルムなどのアクセサリーならtnblogにお任せ。こだわり抜いたデザインのスマホアクセサリーを販売しています。
+            </p>
+
+          </div>
+
+        </div>
+
+
+      </div>
+    </section>
+
+    <section class="l-section index__newProduct">
+
+      <div class="index__inner">
+        <h2 class="index__heading">
+          <span class="-en">NEW ITEM</span>
+          <span class="-ja">新商品</span>
+        </h2>
+
+        <div class="swiper-container index__slider--product js-index-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide index__slide--product inview js-scroll--scale-delay">
+              <a href="/shop/product/detail" class="">
+                <figure class="c-picture__img index__img--product">
+                  <picture class="c-picture__img--inner">
+                    <img src="./assets/images/product_01.png" alt="">
+                  </picture>
+                </figure>
+                <h3 class="index__heading--newProduct">tnblog 1201 Phone (Max Pro)</h3>
+                <p class="index__txt--newProduct">¥3,990</p>
+              </a>
+            </div>
+            <div class="swiper-slide index__slide--product inview js-scroll--scale-delay">
+              <a href="/shop/product/detail">
+                <figure class="c-picture__img index__img--product">
+                  <picture class="c-picture__img--inner">
+                    <img src="./assets/images/product_02.png" alt="">
+                  </picture>
+                </figure>
+                <h3 class="index__heading--newProduct">tnblog 1201 Phone (Max Pro)</h3>
+                <p class="index__txt--newProduct">¥3,990</p>
+              </a>
+            </div>
+            <div class="swiper-slide index__slide--product inview js-scroll--scale-delay">
+              <a href="/shop/product/detail">
+                <figure class="c-picture__img index__img--product">
+                  <picture class="c-picture__img--inner">
+                    <img src="./assets/images/product_03.png" alt="">
+                  </picture>
+                </figure>
+                <h2 class="index__heading--newProduct">tnblog 1201 Phone (Max Pro)</h2>
+                <p class="index__txt--newProduct">¥3,990</p>
+              </a>
+            </div>
+            <div class="swiper-slide index__slide--product inview js-scroll--scale-delay">
+              <a href="/shop/product/detail">
+                <figure class="c-picture__img index__img--product">
+                  <picture class="c-picture__img--inner">
+                    <img src="./assets/images/product_04.png" alt="">
+                  </picture>
+                </figure>
+                <h3 class="index__heading--newProduct">tnblog 1201 Phone (Max Pro)</h3>
+                <p class="index__txt--newProduct">¥3,990</p>
+              </a>
+            </div>
+            <div class="swiper-slide index__slide--product inview js-scroll--scale-delay">
+              <a href="/shop/product/detail">
+                <figure class="c-picture__img index__img--product">
+                  <picture class="c-picture__img--inner">
+                    <img src="./assets/images/product_05.png" alt="">
+                  </picture>
+                </figure>
+                <h3 class="index__heading--newProduct">tnblog 1201 Phone (Max Pro)</h3>
+                <p class="index__txt--newProduct">¥3,990</p>
+              </a>
+            </div>
+            <div class="swiper-slide index__slide--product inview js-scroll--scale-delay">
+              <a href="/shop/product/detail">
+                <figure class="c-picture__img index__img--product">
+                  <picture class="c-picture__img--inner">
+                    <img src="./assets/images/product_05.png" alt="">
+                  </picture>
+                </figure>
+                <h3 class="index__heading--newProduct">tnblog 1201 Phone (Max Pro)</h3>
+                <p class="index__txt--newProduct">¥3,990</p>
+              </a>
+            </div>
+          </div>
+          <div class="index__scrollbar js-slider-scrollbar"></div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="l-section index__category">
+      <div class="index__inner">
+        <div class="index__heading">
+          <span class="-en">CATEGORY</span>
+          <span class="-ja">カテゴリ一覧</span>
+        </div>
+
+        <ul class="index__list--category">
+
+          <li class="index__item--category inview js-scroll--rotate-delay">
+            <a href="/shop/product" class="c-mask">
+              <figure class="c-picture__img index__img--category">
+                <picture class="c-picture__img--inner">
+                  <img src="./assets/images/product_01.png" alt="">
+                </picture>
+                <figcaption>CATEOGRY 01</figcaption>
+              </figure>
+            </a>
+          </li>
+          <li class="index__item--category inview js-scroll--rotate-delay">
+            <a href="/shop/product" class="c-mask">
+              <figure class="c-picture__img index__img--category">
+                <picture class="c-picture__img--inner">
+                  <img src="./assets/images/product_02.png" alt="">
+                </picture>
+                <figcaption>CATEOGRY 02</figcaption>
+              </figure>
+            </a>
+          </li>
+          <li class="index__item--category inview js-scroll--rotate-delay">
+            <a href="/shop/product" class="c-mask">
+              <figure class="c-picture__img index__img--category">
+                <picture class="c-picture__img--inner">
+                  <img src="./assets/images/product_03.png" alt="">
+                </picture>
+                <figcaption>CATEOGRY 03</figcaption>
+              </figure>
+            </a>
+          </li>
+          <li class="index__item--category inview js-scroll--rotate-delay">
+            <a href="/shop/product" class="c-mask">
+              <figure class="c-picture__img index__img--category">
+                <picture class="c-picture__img--inner">
+                  <img src="./assets/images/product_04.png" alt="">
+                </picture>
+                <figcaption>CATEOGRY 04</figcaption>
+              </figure>
+            </a>
+          </li>
+          <li class="index__item--category inview js-scroll--rotate-delay">
+            <a href="/shop/product" class="c-mask">
+              <figure class="c-picture__img index__img--category">
+                <picture class="c-picture__img--inner">
+                  <img src="./assets/images/product_05.png" alt="">
+                </picture>
+                <figcaption>CATEOGRY 05</figcaption>
+              </figure>
+            </a>
+          </li>
+          <li class="index__item--category inview js-scroll--rotate-delay">
+            <a href="/shop/product" class="c-mask">
+              <figure class="c-picture__img index__img--category">
+                <picture class="c-picture__img--inner">
+                  <img src="./assets/images/product_04.png" alt="">
+                </picture>
+                <figcaption>CATEOGRY 06</figcaption>
+              </figure>
+            </a>
+          </li>
+
+
+        </ul>
+
+      </div>
+    </section>
+
+    <section class="l-section index__news">
+      <div class="index__heading">
+        <span class="-en">NEWS</span>
+        <span class="-ja">新着情報</span>
+      </div>
+
+      <div class="container inview js-scroll--fadeUp">
+
+        <div class="row">
+
+          <div class="col-6__sm col-4__md index__item--news">
+            <a href="/shop/news/detail">
+              <figure class="c-picture__img index__img">
+                <picture class="c-picture__img--inner">
+                  <img src="./assets/images/sec/news/news_02.jpg" alt="">
+                </picture>
+              </figure>
+              <div class="c-meta">
+                <p class="-tag">
+                  <span class="c-label">NEW</span>
+                </p>
+                <p class="-date">2021.01.01</p>
+              </div>
+              <h3 class="index__heading--article">
+                tnblog 13シリーズ対応四色カラーのスマホインナーシートが登場！
+              </h3>
+            </a>
+          </div>
+          <div class="col-6__sm col-4__md index__item--news">
+            <a href="/shop/news/detail">
+              <figure class="c-picture__img index__img">
+                <picture class="c-picture__img--inner">
+                  <img src="./assets/images/sec/news/news_02.jpg" alt="">
+                </picture>
+              </figure>
+              <div class="c-meta">
+                <p class="-tag">
+                  <span class="c-label">NEW</span>
+                </p>
+                <p class="-date">2021.01.01</p>
+              </div>
+              <h3 class="index__heading--article">
+                tnblog 13シリーズ対応四色カラーのスマホインナーシートが登場！
+              </h3>
+            </a>
+          </div>
+          <div class="col-6__sm col-4__md index__item--news">
+            <a href="/shop/news/detail">
+              <figure class="c-picture__img index__img">
+                <picture class="c-picture__img--inner">
+                  <img src="./assets/images/sec/news/news_02.jpg" alt="">
+                </picture>
+              </figure>
+              <div class="c-meta">
+                <p class="-tag">
+                  <span class="c-label">NEW</span>
+                </p>
+                <p class="-date">2021.01.01</p>
+              </div>
+              <h3 class="index__heading--article">
+                tnblog 13シリーズ対応四色カラーのスマホインナーシートが登場！
+              </h3>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
+  </section>
+
+
+  </main>
+
+  
+
+<footer class="l-footer" id="footer">
+
+  <div class="l-footer__inner">
+
+    <div class="l-footer__head">
+      <ul class="l-footer__list--sns">
+        <li class="l-footer__item--sns">
+          <a href="">
+            <svg>
+              <use xlink:href="./assets/images/sprite.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="l-footer__item--sns">
+          <a href="">
+            <svg>
+              <use xlink:href="./assets/images/sprite.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="l-footer__item--sns">
+          <a href="">
+            <svg>
+              <use xlink:href="./assets/images/sprite.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="l-footer__body">
+      <p><a href="/shop">ホーム</a></p>
+      <p><a href="/shop/product">製品一覧</a></p>
+      <p><a href="/shop/news">新着情報</a></p>
+      <p><a href="/shop/faq">よくある質問</a></p>
+    </div>
+
+  </div>
+
+
+</footer>
+
+</div>
+
+<script>
+  var userAgent = window.navigator.userAgent.toLowerCase();
+
+  if (userAgent.indexOf('msie') != -1 || userAgent.indexOf('trident') != -1) {
+    window.location.href('https://www.google.com/?hl=ja')
+  }
+</script>
+
+<!-- vendors -->
+<script src="./assets/scripts/vendors/jquery.min.js"></script>
+<script src="./assets/scripts/vendors/jquery.matchHeight-min.js"></script>
+<script src="./assets/scripts/vendors/isotope.pkgd.min.js"></script>
+<script src="./assets/scripts/vendors/swiper-bundle.min.js"></script>
+
+
+
+
+
+<script src="./assets/scripts/swiper.js"></script>
+<script src="./assets/scripts/main.js"></script>
+
+</body>
+
+</html>
+

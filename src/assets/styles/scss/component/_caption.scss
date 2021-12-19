@@ -1,0 +1,73 @@
+.c-caption {
+  @include absolute($bottom:0, $left:0);
+  background: linear-gradient(180deg, transparent, rgba(0, 0, 0, .7));
+  width: 100%;
+
+  &__inner {
+    padding: 0 6% 10%;
+
+    @include mq(sm) {
+    }
+  }
+
+  &__heading {
+    margin: 10px 0 0;
+    letter-spacing: .05em;
+    text-align: left;
+    color: $color-sub;
+    font-size: 1.2rem;
+
+    &>span {
+      color: $color-bg;
+      display: block;
+    }
+
+    & .-en {
+      color: $color-bg;
+      text-transform: capitalize;
+      padding-left: 26px;
+      position: relative;
+
+      &::before {
+        content: "";
+        @include absolute($top: 40%, $left: 0);
+        width: 20px;
+        height: 1px;
+        background: $color-bg;
+      }
+    }
+
+    & .-ja {
+      margin: 2px 0 0;
+      font-size: 1.6rem;
+      font-weight: 500;
+    }
+  }
+
+  &__txt {
+    margin: 16px 0 0;
+    text-align: left;
+    font-size: 1.4rem;
+    color: $color-grey-light-3;
+    padding: 10px;
+    border: 1px solid $color-key;
+    border-radius: 12px;
+
+    line-height: 1.4;
+    &--tag {
+      margin: 20px 0 0;
+      text-align: left;
+      position: relative;
+      z-index: 1;
+
+
+      span {
+        color: $color-bg;
+        text-transform: uppercase;
+        background: $color-key;
+        font-size: 1.2rem;
+      }
+    }
+
+  }
+}

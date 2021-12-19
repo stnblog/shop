@@ -1,0 +1,81 @@
+.p-faq {
+  &__inner {
+    @include maxWidth(920px);
+    padding: 0 20px;
+  }
+
+  &__body {
+    border-top: 1px solid $color-sub;
+    padding: 4%;
+  }
+
+  &__item {
+    position: relative;
+    border: 1px solid $color-sub;
+
+    .js-acc--trigger {
+      cursor: pointer;
+      position: relative;
+      padding: 10px 20px 10px 60px;
+      @include flex($align:center, $justify:space-between);
+
+      &::before {
+        content: "Q.";
+        @include absolute($top:50%, $left:24px);
+        transform: translateY(-50%);
+        font-size: 2rem;
+      }
+    }
+    &:not(:last-child) {
+      margin: 0 0 16px;
+    }
+  }
+
+  &__btn {
+    width: 42px;
+    height: 42px;
+    position: relative;
+
+    &::before, &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      transition: .3s;
+      background: $color-main;
+      @include absCenter;
+    }
+
+    &::before {
+      width: 20px;
+      height: 1px;
+    }
+
+    &::after {
+      height: 20px;
+      width: 1px;
+    }
+  }
+
+  &__heading {
+    padding-top: 80px;
+    font-size: 1.8rem;
+    text-align: left;
+    margin: 0 0 30px;
+
+    &:not(:first-child) {
+    }
+
+    &--title {
+      text-align: left;
+      font-size: 1.4rem;
+    }
+  }
+
+  &__txt {
+    color: $color-sub;
+    font-feature-settings: "palt";
+    text-align: left;
+  }
+
+
+}

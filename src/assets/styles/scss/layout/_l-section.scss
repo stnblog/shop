@@ -1,0 +1,23 @@
+.l-section {
+  position: relative;
+  padding-top: 80px;
+
+  @include mq-target(lg) {
+    padding-top: 180px;
+  }
+
+  // @include mq-target(md) {
+  //   padding: $padding;
+  // }
+
+
+  // &::before {
+  //   content: "";
+  //   width: 60%;
+  //   height: 2px;
+  //   background: rgba($color: $color-key, $alpha: 0.5);
+  //   // background: $color-key;
+  //   position: absolute;
+  //   bottom: 0;
+  // }
+}

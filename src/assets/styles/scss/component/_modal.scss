@@ -1,0 +1,59 @@
+
+
+.c-modal {
+  display: none;
+
+  &__close {
+    z-index: 101;
+    position: absolute;
+    top: 48px;
+    right: calc(7.93651% - 15px);
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #222;
+
+    @include mq-target(sm) {
+      top: 22px;
+      right: 28px;
+    }
+
+    @include mq-target(lg) {
+      left: auto;
+      width: 48px;
+      height: 48px;
+      border: none;
+      cursor: pointer;
+    }
+
+    span {
+      display: block;
+      position: absolute;
+      top: calc(50% - 1px);
+      right: 0;
+      left: 0;
+      width: 14px;
+      height: 2px;
+      margin: auto;
+      background-color: #fff;
+
+      @include mq-target(sm) {
+        width: 14px;
+        height: 2px;
+
+      }
+
+      &:nth-child(1) {
+        transform: rotate(45deg);
+      }
+
+      &:nth-child(2) {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+
+  &__inner {
+    @include flex($align:stretch, $justify:space-between);
+  }
+}

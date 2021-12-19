@@ -1,0 +1,325 @@
+<% let pageId = 'productDetail'; %>
+<% let filePath = jsonData.pages[pageId].filePath %>
+<%- include('./../../_inc/_header', {pageId: pageId }) %>
+
+<div class="js-first-view l-main">
+
+  <section class="p-product">
+    <div class="p-product__inner">
+      <div class="p-product__wrap">
+        <div class="p-product__row">
+          <div class="p-product__item--left">
+
+            <div class="swiper-container p-product__slider">
+              <div class="swiper-wrapper p-product__wrap--slider">
+                <div class="swiper-slide p-product__slide">
+                  <figure class="c-picture__img p-product__img--slide">
+                    <picture class="c-picture__img--inner">
+                      <img src="<%= filePath %>assets/images/product_01.png" alt="">
+                    </picture>
+                  </figure>
+                </div>
+                <div class="swiper-slide p-product__slide">
+                  <figure class="c-picture__img p-product__img--slide">
+                    <picture class="c-picture__img--inner">
+                      <img src="<%= filePath %>assets/images/product_02.png" alt="">
+                    </picture>
+                  </figure>
+                </div>
+                <div class="swiper-slide p-product__slide">
+                  <figure class="c-picture__img p-product__img--slide">
+                    <picture class="c-picture__img--inner">
+                      <img src="<%= filePath %>assets/images/product_03.png" alt="">
+                    </picture>
+                  </figure>
+                </div>
+                <div class="swiper-slide p-product__slide">
+                  <figure class="c-picture__img p-product__img--slide">
+                    <picture class="c-picture__img--inner">
+                      <img src="<%= filePath %>assets/images/product_04.png" alt="">
+                    </picture>
+                  </figure>
+                </div>
+              </div>
+            </div>
+
+            <div class="p-product__thumbs productThumbs mt-12">
+              <div class="p-product__wrap--thumbs flex">
+                <div class="p-product__thumb">
+                  <figure class="c-picture__img p-product__img--thumb">
+                    <picture class="c-picture__img--inner">
+                      <img src="<%= filePath %>assets/images/product_01.png" alt="">
+                    </picture>
+                  </figure>
+                </div>
+                <div class="p-product__thumb">
+                  <figure class="c-picture__img p-product__img--thumb">
+                    <picture class="c-picture__img--inner">
+                      <img src="<%= filePath %>assets/images/product_02.png" alt="">
+                    </picture>
+                  </figure>
+                </div>
+                <div class="p-product__thumb">
+                  <figure class="c-picture__img p-product__img--thumb">
+                    <picture class="c-picture__img--inner">
+                      <img src="<%= filePath %>assets/images/product_03.png" alt="">
+                    </picture>
+                  </figure>
+                </div>
+                <div class="p-product__thumb">
+                  <figure class="c-picture__img p-product__img--thumb">
+                    <picture class="c-picture__img--inner">
+                      <img src="<%= filePath %>assets/images/product_04.png" alt="">
+                    </picture>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="p-product__item--right">
+            <ul class="flex flex-wrap">
+              <li class="c-label p-product__item--label">NEW</li>
+              <li class="c-label p-product__item--label">SALE</li>
+            </ul>
+            <h2 class="p-product__heading--name">
+              tnblog 1201 Phone (Max Pro)
+            </h2>
+            <p class="p-product__txt--price">
+              ￥3,990
+              <span>（税込）</span>
+            </p>
+
+            <div class="p-product__selecter">
+              <label for="">カラー</label>
+              <select class="-select" name="" id="">
+                <option value="black" selected="selected">ブラック</option>
+                <option value="gold">ゴールド</option>
+                <option value="silver">シルバー</option>
+              </select>
+              <label for="">個数</label>
+              <input class="-number" type="number" value="1" min="1" pattern="[0-9]*">
+            </div>
+            <p class="p-product__btn">
+              <button class="c-button c-button--square">追加</button>
+            </p>
+
+
+          </div>
+
+          <div class="p-product__item--bottom">
+            <ul class="js-tab__list p-product__list flex justify-center">
+              <li class="is-active p-product__item--tab js-tab--trigger" data-tab="tab-content01">
+                製品レビュー
+              </li>
+              <li class="p-product__item--tab js-tab--trigger" data-tab="tab-content02">
+                関連製品
+              </li>
+            </ul>
+
+            <div class="p-product__body">
+
+
+              <div id="tab-content01" class="p-product__box js-tab--content is-active">
+
+                <h3 class="p-product__heading--review">
+                  カスタマーレビュー
+                </h3>
+                <ul class="p-product__list--points justify-center mt-6">
+                  <li class="p-product__item--points">
+                    <svg>
+                      <use xlink:href="<%= filePath %>assets/images/sprite.svg#icon-star-full"></use>
+                    </svg>
+                  </li>
+                  <li class="p-product__item--points">
+                    <svg>
+                      <use xlink:href="<%= filePath %>assets/images/sprite.svg#icon-star-full"></use>
+                    </svg>
+                  </li>
+                  <li class="p-product__item--points">
+                    <svg>
+                      <use xlink:href="<%= filePath %>assets/images/sprite.svg#icon-star-full"></use>
+                    </svg>
+                  </li>
+                  <li class="p-product__item--points">
+                    <svg>
+                      <use xlink:href="<%= filePath %>assets/images/sprite.svg#icon-star-full"></use>
+                    </svg>
+                  </li>
+                  <li class="p-product__item--points">
+                    <svg>
+                      <use xlink:href="<%= filePath %>assets/images/sprite.svg#icon-star-empty"></use>
+                    </svg>
+                  </li>
+                </ul>
+
+                <ul class="p-product__list--review">
+                  <li class="p-product__item--review">
+                    <ul class="p-product__list--points">
+                      <li class="p-product__item--points">
+                        <svg>
+                          <use xlink:href="<%= filePath %>assets/images/sprite.svg#icon-star-full"></use>
+                        </svg>
+                      </li>
+                      <li class="p-product__item--points">
+                        <svg>
+                          <use xlink:href="<%= filePath %>assets/images/sprite.svg#icon-star-full"></use>
+                        </svg>
+                      </li>
+                      <li class="p-product__item--points">
+                        <svg>
+                          <use xlink:href="<%= filePath %>assets/images/sprite.svg#icon-star-full"></use>
+                        </svg>
+                      </li>
+                      <li class="p-product__item--points">
+                        <svg>
+                          <use xlink:href="<%= filePath %>assets/images/sprite.svg#icon-star-full"></use>
+                        </svg>
+                      </li>
+                      <li class="p-product__item--points">
+                        <svg>
+                          <use xlink:href="<%= filePath %>assets/images/sprite.svg#icon-star-half"></use>
+                        </svg>
+                      </li>
+                    </ul>
+                    <h4 class="p-product__heading--review">
+                      製品レビュー
+                    </h4>
+                    <p class="c-meta p-product__meta--review">
+                      <span class="-name">坊ちゃん</span>
+                      <span class="-date">2021年01月01日</span>
+                    </p>
+                    <p class="p-product__txt--review">
+                      4年間ほど使用していますが不満は特にありません。これからも愛好する予定です。
+                    </p>
+                  </li>
+                  <li class="p-product__item--review">
+                    <ul class="p-product__list--points">
+                      <li class="p-product__item--points">
+                        <svg>
+                          <use xlink:href="<%= filePath %>assets/images/sprite.svg#icon-star-full"></use>
+                        </svg>
+                      </li>
+                      <li class="p-product__item--points">
+                        <svg>
+                          <use xlink:href="<%= filePath %>assets/images/sprite.svg#icon-star-full"></use>
+                        </svg>
+                      </li>
+                      <li class="p-product__item--points">
+                        <svg>
+                          <use xlink:href="<%= filePath %>assets/images/sprite.svg#icon-star-full"></use>
+                        </svg>
+                      </li>
+                      <li class="p-product__item--points">
+                        <svg>
+                          <use xlink:href="<%= filePath %>assets/images/sprite.svg#icon-star-full"></use>
+                        </svg>
+                      </li>
+                      <li class="p-product__item--points">
+                        <svg>
+                          <use xlink:href="<%= filePath %>assets/images/sprite.svg#icon-star-empty"></use>
+                        </svg>
+                      </li>
+                    </ul>
+                    <h4 class="p-product__heading--review">
+                      製品レビュー
+                    </h4>
+                    <p class="c-meta p-product__meta--review">
+                      <span class="-name">鈴木</span>
+                      <span class="-date">2021年01月01日</span>
+                    </p>
+                    <p class="p-product__txt--review">
+                      2年間ほど使用していますが不満は特にありません。これからも愛好する予定です。
+                    </p>
+                  </li>
+                </ul>
+
+
+              </div>
+
+              <div id="tab-content02" class="p-product__box js-tab--content">
+                <div class="swiper-container index__slider--product js-index-slider">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide index__slide--product">
+                      <a href="/shop/product/detail">
+                        <figure class="c-picture__img index__img--product">
+                          <picture class="c-picture__img--inner">
+                            <img src="<%= filePath %>assets/images/product_01.png" alt="">
+                          </picture>
+                        </figure>
+                        <h3 class="index__heading--newProduct">tnblog 1201 Phone (Max Pro)</h3>
+                        <p class="index__txt--newProduct">¥3,990</p>
+                      </a>
+                    </div>
+                    <div class="swiper-slide index__slide--product">
+                      <a href="/shop/product/detail">
+                        <figure class="c-picture__img index__img--product">
+                          <picture class="c-picture__img--inner">
+                            <img src="<%= filePath %>assets/images/product_02.png" alt="">
+                          </picture>
+                        </figure>
+                        <h3 class="index__heading--newProduct">tnblog 1201 Phone (Max Pro)</h3>
+                        <p class="index__txt--newProduct">¥3,990</p>
+                      </a>
+                    </div>
+                    <div class="swiper-slide index__slide--product">
+                      <a href="/shop/product/detail">
+                        <figure class="c-picture__img index__img--product">
+                          <picture class="c-picture__img--inner">
+                            <img src="<%= filePath %>assets/images/product_03.png" alt="">
+                          </picture>
+                        </figure>
+                        <h2 class="index__heading--newProduct">tnblog 1201 Phone (Max Pro)</h2>
+                        <p class="index__txt--newProduct">¥3,990</p>
+                      </a>
+                    </div>
+                    <div class="swiper-slide index__slide--product">
+                      <a href="/shop/product/detail">
+                        <figure class="c-picture__img index__img--product">
+                          <picture class="c-picture__img--inner">
+                            <img src="<%= filePath %>assets/images/product_04.png" alt="">
+                          </picture>
+                        </figure>
+                        <h3 class="index__heading--newProduct">tnblog 1201 Phone (Max Pro)</h3>
+                        <p class="index__txt--newProduct">¥3,990</p>
+                      </a>
+                    </div>
+                    <div class="swiper-slide index__slide--product">
+                      <a href="/shop/product/detail">
+                        <figure class="c-picture__img index__img--product">
+                          <picture class="c-picture__img--inner">
+                            <img src="<%= filePath %>assets/images/product_05.png" alt="">
+                          </picture>
+                        </figure>
+                        <h3 class="index__heading--newProduct">tnblog 1201 Phone (Max Pro)</h3>
+                        <p class="index__txt--newProduct">¥3,990</p>
+                      </a>
+                    </div>
+                    <div class="swiper-slide index__slide--product">
+                      <a href="/shop/product/detail">
+                        <figure class="c-picture__img index__img--product">
+                          <picture class="c-picture__img--inner">
+                            <img src="<%= filePath %>assets/images/product_05.png" alt="">
+                          </picture>
+                        </figure>
+                        <h3 class="index__heading--newProduct">tnblog 1201 Phone (Max Pro)</h3>
+                        <p class="index__txt--newProduct">¥3,990</p>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="index__scrollbar js-slider-scrollbar"></div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+
+
+<%- include('./../../_inc/_footer', {pageId: pageId })  %>

@@ -1,0 +1,43 @@
+{
+  "siteInfo": {
+    "name": "ポートフォリオ",
+    "siteUrl": "サイトのドメイン"
+  },
+  "pages": {
+    "home": {
+      "name": "ホーム - ",
+      "description": "説明文",
+      "filePath": "./"
+    },
+    "product": {
+      "name": "商品一覧 - ",
+      "description": "説明文",
+      "filePath": "../"
+    },
+    "productDetail": {
+      "name": "商品詳細 - ",
+      "description": "説明文",
+      "filePath": "./../../"
+    },
+    "news": {
+      "name": "ニュース - ",
+      "description": "説明文",
+      "filePath": "../"
+    },
+    "newsDetail": {
+      "name": "ニュース詳細 - ",
+      "description": "説明文",
+      "filePath": "./../../"
+    },
+    "faq": {
+      "name": "制作物 - ",
+      "description": "説明文",
+      "filePath": "../"
+    },
+    "workDetail": {
+      "name": "制作物記事 - ",
+      "description": "説明文",
+      "filePath": "./../../"
+    }
+  }
+}

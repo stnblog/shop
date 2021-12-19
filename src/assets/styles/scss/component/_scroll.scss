@@ -1,0 +1,41 @@
+.c-icon--scroll {
+  display: block;
+  margin: auto;
+  position: fixed;
+  bottom: 0;
+  height: 100px;
+  left: 60px;
+  top: 0;
+  z-index: 10;
+
+  span {
+    color: $color-main;
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 500;
+    left: 8px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    writing-mode: vertical-rl;
+  }
+
+  &::before ,&::after {
+    content: "";
+    position: absolute;
+    margin: auto;
+    display: block;
+    width: 2px;
+  }
+
+  &::before {
+    height: 100px;
+    background: $color-grey-light-4;
+  }
+
+  &::after {
+    background: $color-key;
+    height: 20px;
+    animation: scrollPc 2s ease infinite;
+  }
+}

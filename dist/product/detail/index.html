@@ -1,0 +1,496 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>商品詳細 - ポートフォリオ</title>
+  <meta name="description" content="説明文">
+
+  <link rel="icon" href="./../../assets/images/icon/favicon-32x32.png" sizes="32x32">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link href="http://fonts.cdnfonts.com/css/sofia-pro" rel="stylesheet">
+  <link href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="./../../assets/styles/vendors/swiper-bundle.min.css" rel="stylesheet">
+  <link href="./../../assets/styles/main.min.css" rel="stylesheet">
+
+</head>
+
+
+
+<body data-student="1" class="">
+  <!-- <body data-student="1"> -->
+
+
+  <header id="js-header" class="l-header">
+    <div class="l-header__wrap">
+      <div class="l-header__row">
+        <p class="l-header__logo">
+          <a href="/">tnblog</a>
+        </p>
+        <nav class="l-header__nav u-dp-pc">
+          <ul class="l-header__list l-header__list--nav">
+            <li class="l-header__item--nav">
+              <a href="/shop">
+                <span class="-en">HOME</span>
+                <span class="-ja">ホーム</span>
+              </a>
+            </li>
+            <li class="l-header__item--nav">
+              <a href="/shop/product">
+                <span class="-en">PRODUCT</span>
+                <span class="-ja">製品一覧</span>
+              </a>
+            </li>
+            <li class="l-header__item--nav">
+              <a href="/shop/news">
+                <span class="-en">NEWS</span>
+                <span class="-ja">新着情報</span>
+              </a>
+            </li>
+            <li class="l-header__item--nav">
+              <a href="/shop/faq">
+                <span class="-en">FAQ</span>
+                <span class="-ja">よくある質問</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <button class="l-drawer__trigger js-draw__trigger">
+    <span class="-line"></span>
+  </button>
+
+  <nav class="l-drawer__content js-draw__content">
+    <div class="l-drawer__wrap">
+      <ul class="l-drawer__list l-drawer__list--menu">
+        <li class="l-drawer__item">
+          <a href="/shop">
+            <span class="-en">HOME</span>
+            <span class="-ja">ホーム</span>
+          </a>
+        </li>
+        <li class="l-drawer__item">
+          <a href="/shop/product">
+            <span class="-en">PRODUCT</span>
+            <span class="-ja">製品一覧</span>
+          </a>
+        </li>
+        <li class="l-drawer__item">
+          <a href="/shop/news">
+            <span class="-en">NEWS</span>
+            <span class="-ja">新着情報</span>
+          </a>
+        </li>
+        <li class="l-drawer__item">
+          <a href="/shop/faq">
+            <span class="-en">FAQ</span>
+            <span class="-ja">よくある質問</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+<div class="js-first-view l-main">
+
+  <section class="p-product">
+    <div class="p-product__inner">
+      <div class="p-product__wrap">
+        <div class="p-product__row">
+          <div class="p-product__item--left">
+
+            <div class="swiper-container p-product__slider">
+              <div class="swiper-wrapper p-product__wrap--slider">
+                <div class="swiper-slide p-product__slide">
+                  <figure class="c-picture__img p-product__img--slide">
+                    <picture class="c-picture__img--inner">
+                      <img src="./../../assets/images/product_01.png" alt="">
+                    </picture>
+                  </figure>
+                </div>
+                <div class="swiper-slide p-product__slide">
+                  <figure class="c-picture__img p-product__img--slide">
+                    <picture class="c-picture__img--inner">
+                      <img src="./../../assets/images/product_02.png" alt="">
+                    </picture>
+                  </figure>
+                </div>
+                <div class="swiper-slide p-product__slide">
+                  <figure class="c-picture__img p-product__img--slide">
+                    <picture class="c-picture__img--inner">
+                      <img src="./../../assets/images/product_03.png" alt="">
+                    </picture>
+                  </figure>
+                </div>
+                <div class="swiper-slide p-product__slide">
+                  <figure class="c-picture__img p-product__img--slide">
+                    <picture class="c-picture__img--inner">
+                      <img src="./../../assets/images/product_04.png" alt="">
+                    </picture>
+                  </figure>
+                </div>
+              </div>
+            </div>
+
+            <div class="p-product__thumbs productThumbs mt-12">
+              <div class="p-product__wrap--thumbs flex">
+                <div class="p-product__thumb">
+                  <figure class="c-picture__img p-product__img--thumb">
+                    <picture class="c-picture__img--inner">
+                      <img src="./../../assets/images/product_01.png" alt="">
+                    </picture>
+                  </figure>
+                </div>
+                <div class="p-product__thumb">
+                  <figure class="c-picture__img p-product__img--thumb">
+                    <picture class="c-picture__img--inner">
+                      <img src="./../../assets/images/product_02.png" alt="">
+                    </picture>
+                  </figure>
+                </div>
+                <div class="p-product__thumb">
+                  <figure class="c-picture__img p-product__img--thumb">
+                    <picture class="c-picture__img--inner">
+                      <img src="./../../assets/images/product_03.png" alt="">
+                    </picture>
+                  </figure>
+                </div>
+                <div class="p-product__thumb">
+                  <figure class="c-picture__img p-product__img--thumb">
+                    <picture class="c-picture__img--inner">
+                      <img src="./../../assets/images/product_04.png" alt="">
+                    </picture>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="p-product__item--right">
+            <ul class="flex flex-wrap">
+              <li class="c-label p-product__item--label">NEW</li>
+              <li class="c-label p-product__item--label">SALE</li>
+            </ul>
+            <h2 class="p-product__heading--name">
+              tnblog 1201 Phone (Max Pro)
+            </h2>
+            <p class="p-product__txt--price">
+              ￥3,990
+              <span>（税込）</span>
+            </p>
+
+            <div class="p-product__selecter">
+              <label for="">カラー</label>
+              <select class="-select" name="" id="">
+                <option value="black" selected="selected">ブラック</option>
+                <option value="gold">ゴールド</option>
+                <option value="silver">シルバー</option>
+              </select>
+              <label for="">個数</label>
+              <input class="-number" type="number" value="1" min="1" pattern="[0-9]*">
+            </div>
+            <p class="p-product__btn">
+              <button class="c-button c-button--square">追加</button>
+            </p>
+
+
+          </div>
+
+          <div class="p-product__item--bottom">
+            <ul class="js-tab__list p-product__list flex justify-center">
+              <li class="is-active p-product__item--tab js-tab--trigger" data-tab="tab-content01">
+                製品レビュー
+              </li>
+              <li class="p-product__item--tab js-tab--trigger" data-tab="tab-content02">
+                関連製品
+              </li>
+            </ul>
+
+            <div class="p-product__body">
+
+
+              <div id="tab-content01" class="p-product__box js-tab--content is-active">
+
+                <h3 class="p-product__heading--review">
+                  カスタマーレビュー
+                </h3>
+                <ul class="p-product__list--points justify-center mt-6">
+                  <li class="p-product__item--points">
+                    <svg>
+                      <use xlink:href="./../../assets/images/sprite.svg#icon-star-full"></use>
+                    </svg>
+                  </li>
+                  <li class="p-product__item--points">
+                    <svg>
+                      <use xlink:href="./../../assets/images/sprite.svg#icon-star-full"></use>
+                    </svg>
+                  </li>
+                  <li class="p-product__item--points">
+                    <svg>
+                      <use xlink:href="./../../assets/images/sprite.svg#icon-star-full"></use>
+                    </svg>
+                  </li>
+                  <li class="p-product__item--points">
+                    <svg>
+                      <use xlink:href="./../../assets/images/sprite.svg#icon-star-full"></use>
+                    </svg>
+                  </li>
+                  <li class="p-product__item--points">
+                    <svg>
+                      <use xlink:href="./../../assets/images/sprite.svg#icon-star-empty"></use>
+                    </svg>
+                  </li>
+                </ul>
+
+                <ul class="p-product__list--review">
+                  <li class="p-product__item--review">
+                    <ul class="p-product__list--points">
+                      <li class="p-product__item--points">
+                        <svg>
+                          <use xlink:href="./../../assets/images/sprite.svg#icon-star-full"></use>
+                        </svg>
+                      </li>
+                      <li class="p-product__item--points">
+                        <svg>
+                          <use xlink:href="./../../assets/images/sprite.svg#icon-star-full"></use>
+                        </svg>
+                      </li>
+                      <li class="p-product__item--points">
+                        <svg>
+                          <use xlink:href="./../../assets/images/sprite.svg#icon-star-full"></use>
+                        </svg>
+                      </li>
+                      <li class="p-product__item--points">
+                        <svg>
+                          <use xlink:href="./../../assets/images/sprite.svg#icon-star-full"></use>
+                        </svg>
+                      </li>
+                      <li class="p-product__item--points">
+                        <svg>
+                          <use xlink:href="./../../assets/images/sprite.svg#icon-star-half"></use>
+                        </svg>
+                      </li>
+                    </ul>
+                    <h4 class="p-product__heading--review">
+                      製品レビュー
+                    </h4>
+                    <p class="c-meta p-product__meta--review">
+                      <span class="-name">坊ちゃん</span>
+                      <span class="-date">2021年01月01日</span>
+                    </p>
+                    <p class="p-product__txt--review">
+                      4年間ほど使用していますが不満は特にありません。これからも愛好する予定です。
+                    </p>
+                  </li>
+                  <li class="p-product__item--review">
+                    <ul class="p-product__list--points">
+                      <li class="p-product__item--points">
+                        <svg>
+                          <use xlink:href="./../../assets/images/sprite.svg#icon-star-full"></use>
+                        </svg>
+                      </li>
+                      <li class="p-product__item--points">
+                        <svg>
+                          <use xlink:href="./../../assets/images/sprite.svg#icon-star-full"></use>
+                        </svg>
+                      </li>
+                      <li class="p-product__item--points">
+                        <svg>
+                          <use xlink:href="./../../assets/images/sprite.svg#icon-star-full"></use>
+                        </svg>
+                      </li>
+                      <li class="p-product__item--points">
+                        <svg>
+                          <use xlink:href="./../../assets/images/sprite.svg#icon-star-full"></use>
+                        </svg>
+                      </li>
+                      <li class="p-product__item--points">
+                        <svg>
+                          <use xlink:href="./../../assets/images/sprite.svg#icon-star-empty"></use>
+                        </svg>
+                      </li>
+                    </ul>
+                    <h4 class="p-product__heading--review">
+                      製品レビュー
+                    </h4>
+                    <p class="c-meta p-product__meta--review">
+                      <span class="-name">鈴木</span>
+                      <span class="-date">2021年01月01日</span>
+                    </p>
+                    <p class="p-product__txt--review">
+                      2年間ほど使用していますが不満は特にありません。これからも愛好する予定です。
+                    </p>
+                  </li>
+                </ul>
+
+
+              </div>
+
+              <div id="tab-content02" class="p-product__box js-tab--content">
+                <div class="swiper-container index__slider--product js-index-slider">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide index__slide--product">
+                      <a href="/shop/product/detail">
+                        <figure class="c-picture__img index__img--product">
+                          <picture class="c-picture__img--inner">
+                            <img src="./../../assets/images/product_01.png" alt="">
+                          </picture>
+                        </figure>
+                        <h3 class="index__heading--newProduct">tnblog 1201 Phone (Max Pro)</h3>
+                        <p class="index__txt--newProduct">¥3,990</p>
+                      </a>
+                    </div>
+                    <div class="swiper-slide index__slide--product">
+                      <a href="/shop/product/detail">
+                        <figure class="c-picture__img index__img--product">
+                          <picture class="c-picture__img--inner">
+                            <img src="./../../assets/images/product_02.png" alt="">
+                          </picture>
+                        </figure>
+                        <h3 class="index__heading--newProduct">tnblog 1201 Phone (Max Pro)</h3>
+                        <p class="index__txt--newProduct">¥3,990</p>
+                      </a>
+                    </div>
+                    <div class="swiper-slide index__slide--product">
+                      <a href="/shop/product/detail">
+                        <figure class="c-picture__img index__img--product">
+                          <picture class="c-picture__img--inner">
+                            <img src="./../../assets/images/product_03.png" alt="">
+                          </picture>
+                        </figure>
+                        <h2 class="index__heading--newProduct">tnblog 1201 Phone (Max Pro)</h2>
+                        <p class="index__txt--newProduct">¥3,990</p>
+                      </a>
+                    </div>
+                    <div class="swiper-slide index__slide--product">
+                      <a href="/shop/product/detail">
+                        <figure class="c-picture__img index__img--product">
+                          <picture class="c-picture__img--inner">
+                            <img src="./../../assets/images/product_04.png" alt="">
+                          </picture>
+                        </figure>
+                        <h3 class="index__heading--newProduct">tnblog 1201 Phone (Max Pro)</h3>
+                        <p class="index__txt--newProduct">¥3,990</p>
+                      </a>
+                    </div>
+                    <div class="swiper-slide index__slide--product">
+                      <a href="/shop/product/detail">
+                        <figure class="c-picture__img index__img--product">
+                          <picture class="c-picture__img--inner">
+                            <img src="./../../assets/images/product_05.png" alt="">
+                          </picture>
+                        </figure>
+                        <h3 class="index__heading--newProduct">tnblog 1201 Phone (Max Pro)</h3>
+                        <p class="index__txt--newProduct">¥3,990</p>
+                      </a>
+                    </div>
+                    <div class="swiper-slide index__slide--product">
+                      <a href="/shop/product/detail">
+                        <figure class="c-picture__img index__img--product">
+                          <picture class="c-picture__img--inner">
+                            <img src="./../../assets/images/product_05.png" alt="">
+                          </picture>
+                        </figure>
+                        <h3 class="index__heading--newProduct">tnblog 1201 Phone (Max Pro)</h3>
+                        <p class="index__txt--newProduct">¥3,990</p>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="index__scrollbar js-slider-scrollbar"></div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+
+
+
+
+<footer class="l-footer" id="footer">
+
+  <div class="l-footer__inner">
+
+    <div class="l-footer__head">
+      <ul class="l-footer__list--sns">
+        <li class="l-footer__item--sns">
+          <a href="">
+            <svg>
+              <use xlink:href="./../../assets/images/sprite.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="l-footer__item--sns">
+          <a href="">
+            <svg>
+              <use xlink:href="./../../assets/images/sprite.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="l-footer__item--sns">
+          <a href="">
+            <svg>
+              <use xlink:href="./../../assets/images/sprite.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="l-footer__body">
+      <p><a href="/shop">ホーム</a></p>
+      <p><a href="/shop/product">製品一覧</a></p>
+      <p><a href="/shop/news">新着情報</a></p>
+      <p><a href="/shop/faq">よくある質問</a></p>
+    </div>
+
+  </div>
+
+
+</footer>
+
+</div>
+
+<script>
+  var userAgent = window.navigator.userAgent.toLowerCase();
+
+  if (userAgent.indexOf('msie') != -1 || userAgent.indexOf('trident') != -1) {
+    window.location.href('https://www.google.com/?hl=ja')
+  }
+</script>
+
+<!-- vendors -->
+<script src="./../../assets/scripts/vendors/jquery.min.js"></script>
+<script src="./../../assets/scripts/vendors/jquery.matchHeight-min.js"></script>
+<script src="./../../assets/scripts/vendors/isotope.pkgd.min.js"></script>
+<script src="./../../assets/scripts/vendors/swiper-bundle.min.js"></script>
+
+
+
+
+
+<script src="./../../assets/scripts/swiper.js"></script>
+<script src="./../../assets/scripts/main.js"></script>
+
+</body>
+
+</html>
+

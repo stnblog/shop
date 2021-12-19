@@ -1,0 +1,75 @@
+.c-filter {
+  padding: 0 15px;
+  display: flex;
+  @include mq(sm) {
+    padding: 30px 0;
+  }
+
+
+  &__heading {
+    margin-right: 24px;
+  }
+
+
+  &__item {
+
+    &--tab {
+      display: inline-block;
+      margin: 0 10px 10px 0;
+
+      span {
+        border: 1px solid $color-main;
+        padding: 8px 24px;
+        font-weight: 500;
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        position: relative;
+        cursor: pointer;
+
+        &::after {
+          content: '';
+          opacity: 0;
+          transition: opacity 0.6s ease;
+          width: 7px;
+          height: 7px;
+          background: $color-green-light-2;
+          border-radius: 50%;
+          position: absolute;
+          right: 10px;
+          top: 12px;
+
+        }
+      }
+
+      &.is-active span::after {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+
+
+// <div class="js-filtering c-filter">
+// <ul class="c-filter__list">
+//   <li class="c-filter__item is-active" data-filter='*'>
+//     <span>All</span>
+//   </li>
+//   <li class="c-filter__item" data-filter='.brand'>
+//     <span>BLOG</span>
+//   </li>
+//   <li class="c-filter__item" data-filter='.web'>
+//     <span>EVENT</span>
+//   </li>
+//   <li class="c-filter__item" data-filter='.graphic'>
+//     <span>SALE</span>
+//   </li>
+// </ul>
+// </div>
+
+
+// <ul class="blog__list js-gallery">
+// <li class="blog__item js-filter-items graphic">
+// </li>
+// </ul>

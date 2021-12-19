@@ -1,0 +1,11 @@
+.c-pagination {
+  margin: 40px 0 0;
+  ul {
+    @include flex($align:center, $wrap:wrap, $justify:center);
+    padding: 20px 0;
+    width: 100%;
+    li {
+
+    }
+  }
+}
